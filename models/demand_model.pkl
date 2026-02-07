@@ -1,0 +1,20 @@
+import joblib
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.preprocessing import StandardScaler
+
+# Load the saved model
+model = joblib.load('demand_model.pkl')
+
+# Example prediction
+def predict_demand(features):
+    """
+    Predict demand based on input features
+    features: array-like of shape (n_samples, n_features)
+    """
+    return model.predict(features)
+
+if __name__ == "__main__":
+    # Example usage
+    sample_data = [[100, 50, 20]]  # Adjust based on your features
+    prediction = predict_demand(sample_data)
+    print(f"Predicted demand: {prediction}")

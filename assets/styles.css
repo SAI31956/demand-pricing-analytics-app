@@ -1,0 +1,49 @@
+/* ===== Global App Styling ===== */
+html, body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f7f9fc;
+}
+
+/* ===== Header ===== */
+.app-header {
+    background: linear-gradient(90deg, #020617, #1e293b);
+    padding: 20px 40px;
+    border-radius: 0 0 12px 12px;
+    margin-bottom: 20px;
+}
+
+.app-header h1 {
+    color: white;
+    font-size: 34px;
+    margin-bottom: 4px;
+}
+
+.app-header p {
+    color: #e6ecff;
+    font-size: 16px;
+}
+
+/* ===== KPI Cards ===== */
+div[data-testid="metric-container"] {
+    background-color: #313855;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(91, 55, 55, 0.05);
+    border-left: 6px solid #23414e;
+}
+
+/* ===== Section Headers ===== */
+h2, h3 {
+    color: #1f2937;
+    margin-top: 20px;
+}
+
+/* ===== Footer ===== */
+.app-footer {
+    margin-top: 50px;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
+}
